@@ -38,3 +38,24 @@ nav button:hover {
     background-color: vaR(--button);
     border: solid 2px #FFF;
 }
+
+main {
+    height: 87.5%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: end;
+}
+
+#main-header {
+    color: var(--text-color);
+    font-size: 1.875rem;
+    text-align: center;
+}
+
+#main-header span {
+    color: var(--backgrond);
+    text-shadow: 
+    -1px -1px 0 var(--button), 1px -1px 0 var(--button), 
+    -1px 1px 0 var(--button), 1px 1px 0 var(--button);
+}
