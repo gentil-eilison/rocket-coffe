@@ -4,6 +4,7 @@ body {
 
 nav {
     display: flex;
+    position: relative;
     justify-content: space-evenly;
     align-items: center;
     padding-top: 2rem;
@@ -29,7 +30,7 @@ nav button {
     
     color: var(--text-color);
     border: solid 2px var(--button);
-    background-color: var(--backgrond);
+    background-color: rgba(0, 0, 0, 0%);
     border-radius: .3125rem;
 }
 
@@ -58,4 +59,19 @@ main {
     text-shadow: 
     -1px -1px 0 var(--button), 1px -1px 0 var(--button), 
     -1px 1px 0 var(--button), 1px 1px 0 var(--button);
+}
+
+#bottom-left-blur, #top-right-blur {
+    height: 100%;
+    position: absolute;
+    z-index: 0;
+}
+
+#bottom-left-blur {
+    bottom: 0;
+}
+
+#top-right-blur {
+    top: 0;
+    right: 0;
 }
