@@ -29,6 +29,7 @@ nav button {
     height: 3rem;
     
     color: var(--text-color);
+    font-weight: 700;
     border: solid 2px var(--button);
     background-color: rgba(0, 0, 0, 0%);
     border-radius: .3125rem;
@@ -41,24 +42,10 @@ nav button:hover {
 }
 
 main {
-    height: 87.5%;
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: end;
-}
-
-#main-header {
-    color: var(--text-color);
-    font-size: 1.875rem;
-    text-align: center;
-}
-
-#main-header span {
-    color: var(--backgrond);
-    text-shadow: 
-    -1px -1px 0 var(--button), 1px -1px 0 var(--button), 
-    -1px 1px 0 var(--button), 1px 1px 0 var(--button);
 }
 
 #bottom-left-blur, #top-right-blur {
@@ -74,4 +61,94 @@ main {
 #top-right-blur {
     top: 0;
     right: 0;
+}
+
+@media screen and (min-width: 1280px) {
+    #desktop-main-header {
+        color: var(--text-color);
+        font-size: 1.875rem;
+        text-align: center;
+    }
+    
+    #desktop-main-header span {
+        color: var(--backgrond);
+        text-shadow: 
+        -1px -1px 0 var(--button), 1px -1px 0 var(--button), 
+        -1px 1px 0 var(--button), 1px 1px 0 var(--button);
+    }
+
+    #mobile-main-header {
+        display: none;
+    }
+
+    #mobile-header {
+        display: none;
+    }
+
+    #mobile-blur {
+        display: none;
+    }
+}
+
+@media screen and (max-width: 414px) {
+    #desktop-header {
+        display: none;
+    }
+
+    #desktop-main-header {
+        display: none;
+    }
+
+    .desktop-blur {
+        display: none;
+    }
+
+    main {
+        position: relative;
+    }
+
+    #mobile-blur {
+        position: absolute;
+        bottom: 0;
+        z-index: 0;
+    }
+
+    #mobile-main-header {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 5rem;
+        padding: 0 2rem;
+    }
+
+    #mobile-main-header h1 {
+        color: var(--text-color);
+        text-align: center;
+    }
+
+    #mobile-main-header button {
+        width: 12rem;
+        height: 3rem;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: .7rem;
+    
+        color: var(--text-color);
+        font-weight: 700;
+        border: solid 2px var(--button);
+        background-color: rgba(0, 0, 0, 0%);
+        border-radius: .3125rem;
+    }
+
+    #mobile-header {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 2rem 1rem;
+    }
+
+    #coffee-mugs {
+        width: 400px;
+    }
 }

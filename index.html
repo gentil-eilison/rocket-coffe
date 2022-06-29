@@ -13,9 +13,10 @@
     <title>RocketCoffee - Greate Coffe, Great Code</title>
 </head>
 <body>
-    <img src="./assets/blur-1.png" alt="Purple blur on bottom left corner" id="bottom-left-blur">
-    <img src="./assets/blur-2.png" alt="Purple blur on top right corner" id="top-right-blur">
-    <header>
+    <img src="./assets/blur-1.png" alt="Purple blur on bottom left corner" id="bottom-left-blur" class="desktop-blur">
+    <img src="./assets/blur-2.png" alt="Purple blur on top right corner" id="top-right-blur" class="desktop-blur">
+    
+    <header id="desktop-header">
         <nav>
             <img src="./assets/logo-desktop.svg" alt="Rockeseat logo">
             <ul>
@@ -28,12 +29,26 @@
             <button>PEGAR MEU CAFÉ</button>
         </nav>
     </header>
+    <header id="mobile-header">
+        <img src="./assets/logo-mobile.svg" alt="Rocketseat logo mobile version">
+        <img src="./assets/menu-buguer-open.svg" alt="Three-line burger menu">
+    </header>
 
     <main>
-        <header id="main-header">
+        <header id="desktop-main-header">
             <h1>GREAT COFFEE <br> <span>&lt;GREAT CODE/&gt;</span></h1>
         </header>
-        <img src="./assets/rocket-coffee.png" alt="Two purple coffee cups hitting next to each other">
+        <header id="mobile-main-header">
+            <h1>O café que fará seu código decolar para o próximo nível.</h1>
+            <button>
+                PEGAR MEU CAFÉ
+                <svg width="8" height="13" viewBox="0 0 8 13" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M1.414 12.207L7.121 6.49997L1.414 0.792969L0 2.20697L4.293 6.49997L0 10.793L1.414 12.207Z" fill="white"/>
+                    </svg>
+            </button>
+        </header>
+        <img src="./assets/rocket-coffee.png" alt="Two purple coffee cups hitting next to each other" id="coffee-mugs">
+        <img src="./assets/blur-mobile.png" alt="Purple blur on the bottom of the screen" id="mobile-blur">
     </main>
 </body>
 </html>
