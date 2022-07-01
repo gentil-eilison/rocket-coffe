@@ -20,18 +20,19 @@
         <nav>
             <img src="./assets/logo-desktop.svg" alt="Rockeseat logo">
             <ul>
-                <li>Home</li>
-                <li>Menu</li>
-                <li>Recompensas</li>
-                <li>Gift Cards</li>
-                <li>Lojas</li>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#menu">Menu</a></li>
+                <li><a href="#recompensas">Recompensas</a></li>
+                <li><a href="#giftcards">Gift Cards</a></li>
+                <li><a href="#lojas">Lojas</a></li>
             </ul>
             <button>PEGAR MEU CAFÉ</button>
         </nav>
     </header>
     <header id="mobile-header">
-        <img src="./assets/logo-mobile.svg" alt="Rocketseat logo mobile version">
-        <img src="./assets/menu-buguer-open.svg" alt="Three-line burger menu">
+        <img src="./assets/logo-mobile.svg" alt="Rocketseat logo mobile version" >
+        
+        <img src="./assets/menu-buguer-open.svg" alt="Three-line burger menu" id="burger-clicker">
     </header>
 
     <main>
@@ -47,8 +48,20 @@
                     </svg>
             </button>
         </header>
+
+        <nav id="mobile-navbar" class="invisible">
+            <ul>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#menu">Menu</a></li>
+                <li><a href="#recompensas">Recompensas</a></li>
+                <li><a href="#giftcards">Gift Cards</a></li>
+                <li><a href="#lojas">Lojas</a></li>
+            </ul>
+        </nav>
+
         <img src="./assets/rocket-coffee.png" alt="Two purple coffee cups hitting next to each other" id="coffee-mugs">
         <img src="./assets/blur-mobile.png" alt="Purple blur on the bottom of the screen" id="mobile-blur">
     </main>
 </body>
+<script src="./scripts/navbar.js"></script>
 </html>

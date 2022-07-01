@@ -20,7 +20,7 @@ html, body {
 
 body {
     position: relative;
-    border: solid 2px purple;
+    /* border: solid 2px purple; */
     display: flex;
     flex-direction: column;
     gap: 3.9rem;

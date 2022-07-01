@@ -24,6 +24,15 @@ nav ul li:hover {
     border-bottom: .03125rem var(--button) solid;
 }
 
+nav ul li a {
+    text-decoration: none;
+    color: var(--text-color);
+}
+
+.desktop-active {
+    border-bottom: .03125rem var(--button) solid;
+}
+
 nav button {
     width: 12rem;
     height: 3rem;
@@ -51,7 +60,7 @@ main {
 #bottom-left-blur, #top-right-blur {
     height: 100%;
     position: absolute;
-    z-index: 0;
+    z-index: -1;
 }
 
 #bottom-left-blur {
@@ -63,7 +72,7 @@ main {
     right: 0;
 }
 
-@media screen and (min-width: 1280px) {
+@media screen and (min-width: 481px) {
     #desktop-main-header {
         color: var(--text-color);
         font-size: 1.875rem;
@@ -77,10 +86,6 @@ main {
         -1px 1px 0 var(--button), 1px 1px 0 var(--button);
     }
 
-    #mobile-main-header {
-        display: none;
-    }
-
     #mobile-header {
         display: none;
     }
@@ -88,9 +93,17 @@ main {
     #mobile-blur {
         display: none;
     }
+
+    #mobile-main-header {
+        display: none;
+    }
+    #mobile-navbar {
+        display: none;
+    }
+
 }
 
-@media screen and (max-width: 414px) {
+@media screen and (max-width: 480px) {
     #desktop-header {
         display: none;
     }
@@ -105,12 +118,13 @@ main {
 
     main {
         position: relative;
+        flex-grow: 1;
     }
 
     #mobile-blur {
         position: absolute;
         bottom: 0;
-        z-index: 0;
+        z-index: -1;
     }
 
     #mobile-main-header {
@@ -151,4 +165,44 @@ main {
     #coffee-mugs {
         width: 400px;
     }
+
+    #mobile-navbar ul {
+        list-style: none;
+        display: inline;
+        width: 100%;
+    }
+
+    #mobile-navbar {
+        flex-direction: column;
+        justify-content: flex-start;
+        align-items: flex-start;
+        padding-top: 0;
+        width: 100%;
+        height: 100%;
+    }
+
+    #mobile-navbar li {
+        border-top: solid .2px var(--border-menu-mobile);
+        border-bottom: solid .2px var(--border-menu-mobile);
+        width: 100%;
+        
+    }
+
+    #mobile-navbar a {
+        color: rgb(100, 97, 97);
+        text-decoration: none;
+        display: block;
+        width: 100%;
+        padding: 5px 0 5px 30px;
+    }
+
+    .mobile-active {
+        border-left: solid 5px var(--button);
+        color: white !important; 
+    }
+
+    .invisible {
+        display: none !important;
+    }
+
 }
